@@ -26,7 +26,7 @@ import tkinter as tk
 from saudação import iniciar_conversa
 from validacpf import numerar_cpf
 from dados import continuar
-from Carros import mostrar_carros
+from Carros import mostrar_carros_por_marca
 from perguntas import mostrar_resultado
 from simulado import calcular_simulacao
 from dialogo import SimuladorAtendimento
@@ -52,7 +52,7 @@ class MainController:
 
     def show_carros(self):
         self.clear_frame()
-        self.current_interface = mostrar_carros(self.root, self)
+        self.current_interface = mostrar_carros_por_marca(self.root, self)
 
     def show_pergunta(self):
         self.clear_frame()
